@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(95deg, rgb(209, 136, 232), rgb(0, 200, 255));
+}
+
+/* Calculator container */
+.calculator {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    height: 450px;
+    padding: 15px;
+}
+
+/* Display button */
+#btn_clk {
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 2em;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button grid layout */
+.btn {
+    width: 320px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn2 {
+    width: 320px;
+    height: 70px;
+    padding-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 15px;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+    background: rgb(204, 142, 252);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button click effect */
+button:active {
+    background: rgb(68, 61, 129);
+    transform: scale(0.95);
+}
